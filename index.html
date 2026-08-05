@@ -183,9 +183,9 @@ canvas{display:block}
   <!-- ── FILTRO POR EQUIPO ───────────────────────────────── -->
   <div class="filterbar">
     <span class="fb-label">Ver equipo:</span>
-    <button class="team-btn all on" onclick="setTeam('all',this)">👥 Todos <span class="tcnt">13</span></button>
-    <button class="team-btn carlos" onclick="setTeam('carlos',this)">🔵 Head Carlos <span class="tcnt">7</span></button>
-    <button class="team-btn ana" onclick="setTeam('ana',this)">🟣 Head Ana <span class="tcnt">8</span></button>
+    <button class="team-btn all on" onclick="setTeam('all',this)">👥 Todos <span class="tcnt">18</span></button>
+    <button class="team-btn carlos" onclick="setTeam('carlos',this)">🔵 Head Carlos <span class="tcnt">9</span></button>
+    <button class="team-btn ana" onclick="setTeam('ana',this)">🟣 Head Ana <span class="tcnt">9</span></button>
     <div id="teamInfo" style="margin-left:auto;font-size:10px;color:var(--t3);font-style:italic"></div>
   </div>
 
@@ -6714,7 +6714,7 @@ function updateKPICards(){
   // ── Datos por equipo ──────────────────────────────────────────────────────
   var D={
     all:{
-      cap_val:'S/.5,443,425.75', cap_pct:'145.5', cap_cuota:'S/.3.74M', cap_proy:'S/.5,556,282.68',
+      cap_val:'S/.5,443,425.75', cap_pct:'145.5', cap_cuota:'S/.3.74M', cap_proy:'S/.5,556,282.68', cap_real:'S/.5,443,425.75',
       funnel_val:'S/.2,269,642.62', funnel_50:'53 cta · S/.6.39M', funnel_75:'24 cta · S/.3.38M',
       inc_val:'S/.5,217,333', inc_proy:'S/.5,217,333',
       ruc_val:'57', ruc_pct:'105.6', ruc_cuota:'54', ruc_proy:'57',
@@ -6727,7 +6727,7 @@ function updateKPICards(){
       qr_m0_val:'70', qr_m0_ge:'45', qr_m0_lt:'25'
     },
     carlos:{
-      cap_val:'S/.685K', cap_pct:'36.7', cap_cuota:'S/.1.87M', cap_proy:'S/.685K',
+      cap_val:'S/.3,399,838.33', cap_pct:'181.8', cap_cuota:'S/.1.87M', cap_proy:'S/.3,525,529.00', cap_real:'S/.3,399,838.33',
       funnel_val:'S/.2,082,167', funnel_50:'33 cta · S/.1,869,833', funnel_75:'6 cta · S/.212,333',
       inc_val:'S/.3,703,333', inc_proy:'S/.3,703,333',
       ruc_val:'0', ruc_pct:'0', ruc_cuota:'21', ruc_proy:'0',
@@ -6740,7 +6740,7 @@ function updateKPICards(){
       qr_m0_val:'3', qr_m0_ge:'1', qr_m0_lt:'2'
     },
     ana:{
-      cap_val:'S/.1.070M', cap_pct:'49.8', cap_cuota:'S/.2.15M', cap_proy:'S/.1.070M',
+      cap_val:'S/.2,301,013.11', cap_pct:'123.0', cap_cuota:'S/.2.15M', cap_proy:'S/.2,290,897.45', cap_real:'S/.2,301,013.11',
       funnel_val:'S/.3,135,167', funnel_50:'46 cta · S/.3,135,167', funnel_75:'0 cta · S/.0',
       inc_val:'S/.5,316,667', inc_proy:'S/.5,316,667',
       ruc_val:'3', ruc_pct:'12.5', ruc_cuota:'24', ruc_proy:'3',
@@ -6777,7 +6777,7 @@ function updateKPICards(){
     +kpi('linear-gradient(90deg,#A855F7,#888780)','Real Proyectado',d.cap_proy,'#A855F7',
       bar4('#A855F7',parseFloat(d.cap_pct))
       +sp('#888780',d.cap_pct+'% · Cuota: '+d.cap_cuota)
-      +sp('#606070','Real 31 Jul: S/.5,443,425.75'))
+      +sp('#606070','Real 31 Jul: '+(d.cap_real||'S/.5,443,425.75')))
     // 2. Cosechas M1·M2·M3
     +kpi('linear-gradient(90deg,#3B82F6,#00E5A0)','COSECHAS M1·M2·M3',d.cos_tot,'#3B82F6',
       sp('#3B82F6','M1: '+d.cos_m1)
