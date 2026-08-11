@@ -206,7 +206,7 @@ canvas{display:block}
 
       <!-- Cosechas -->
       <div class="panel" style="margin-bottom:14px">
-        <div class="ph"><div><div class="pt">Distribución de Cosechas</div><div class="ps">Real vs Proyección · Abril a Julio · Dia 09 Agosto</div></div></div>
+        <div class="ph"><div><div class="pt">Distribución de Cosechas</div><div class="ps">Proyección por mes · Mayo a Agosto · Dia 09 Agosto</div></div></div>
         <div style="position:relative;height:240px"><canvas id="cCosecha"></canvas></div>
       </div>
 
@@ -4655,12 +4655,12 @@ function bP1(){
   var _ALL_T=["Head Carlos","Head Carlos","Head Carlos","Head Carlos","Head Carlos","Head Carlos","Head Carlos","Head Carlos","Head Ana","Head Ana","Head Ana","Head Ana","Head Ana","Head Ana","Head Ana","Head Ana","Head Carlos"];
   var _ALL_LBL=["Melissa V.","Melisa Ll.","Rosa T.","Andrea S.","Yasmin Ch.","Maria Fl.","Kevin P.","Leonardo T.","Alicia Q.","Oliver L.","Patricia A.","Analiz C.","Rock Ll.","Franco R.","Cristian H.","Jannior S.","Giuliana H."];
   var _ALL_BC=["#FF6B6B","#FF6B9D","#6BCF7F","#FFD93D","#888780","#EC4899","#06B6D4","#8B5CF6","#FF8C42","#4ECDC4","#00E5A0","#F59E0B","#84CC16","#F97316","#00C9FF","#E11D48","#3B82F6"];
-  var _ALL_CAP=[805774.19,231580.37,316379.39,544345.1,321594.68,360809.97,310048.45,518557.15,237153.01,342954.55,824407.02,141658.3,75018.5,47549.2,220826.01,386272.17,116439.71];
+  var _ALL_CAP=[462172.22,120087.99,169255.09,40796.14,669032.89,-5370.38,-110464.32,-224703.92,212937.8,58510.18,739268.96,1038435.19,-46461.09,12996.97,-43860.18,157599.93,267078.32];
   var _ALL_CUOTA_CAP=[280000,280000,280000,280000,250000,250000,250000,250000,280000,280000,280000,280000,250000,250000,250000,250000,250000];
-  var _ALL_QR=[12,4,3,4,3,1,3,2,5,4,7,3,4,4,2,5,4];
-  var _ALL_RUC=[3,3,2,8,3,4,3,10,4,1,3,1,2,3,2,3,1];
-  var _ALL_RUC_MAY=[3,3,2,8,3,4,3,10,4,1,3,1,2,3,2,3,1];
-  var _ALL_ARIS=[0,169,236,338,0,177,0,0,692,885,582,0,0,0,177,0,0];
+  var _ALL_QR=[3,2,0,4,2,1,1,0,2,0,0,3,0,0,3,1,2];
+  var _ALL_RUC=[1,5,1,0,0,3,1,0,2,0,1,2,0,0,0,0,0];
+  var _ALL_RUC_MAY=[1,5,1,0,0,3,1,0,2,0,1,2,0,0,0,0,0];
+  var _ALL_ARIS=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var _ALL_ARIS_CUOTA=[240,240,240,240,180,180,180,180,240,240,240,240,180,180,180,180,180];
 
   // Filtrar por equipo
@@ -4804,11 +4804,11 @@ function bP1(){
     // Mayo:  Real 445,129.36  | Proy 1,173,416.88 | 37.9%
     // Junio: Real 1,835,425.70| Proy 2,024,948.90 | 90.6%
     // Julio: Real 1,987,799.69| Proy 2,216,982.10 | 89.7%
-    var _cos_real=[531831.12,1112828.87,1998863.62,2057327.82];
-    var _cos_proy=[531831.12,1206331.02,1994065.65,2084198.65];
-    var _pct=[100.0,92.2,100.2,98.7];
-    var _nc_all=[40,43,55,57];
-    var _lbl_cos=["Abril","Mayo","Junio","Julio"];
+    var _cos_real=[592817.9,529651.38,2394842.5,0.0];
+    var _cos_proy=[592817.9,529651.38,2394842.5,0.0];
+    var _pct=[100.0,100.0,100.0,100.0];
+    var _nc_all=[43,55,57,16];
+    var _lbl_cos=["Mayo","Junio","Julio","Agosto"];
     // Colors: negative = red tones, positive = green/blue tones
     var _bg_real=["rgba(239,68,68,.75)","rgba(239,68,68,.75)","rgba(34,197,94,.75)","rgba(168,85,247,.75)"];
     var _bg_proy=["rgba(239,68,68,.25)","rgba(239,68,68,.25)","rgba(34,197,94,.25)","rgba(168,85,247,.25)"];
@@ -4901,7 +4901,7 @@ function bP1(){
     var _plug={id:'fbJun',afterDatasetsDraw:function(chart){chart.data.datasets.forEach(function(ds,di){var meta=chart.getDatasetMeta(di);if(meta.hidden)return;var sols=di===0?_solC:_solA;meta.data.forEach(function(b,i){var v=ds.data[i];if(v<=0)return;var barH=Math.abs(b.base-b.y);chart.ctx.save();chart.ctx.fillStyle='#fff';chart.ctx.textAlign='center';if(barH>30){chart.ctx.font='bold 10px sans-serif';chart.ctx.textBaseline='middle';chart.ctx.fillText(v.toFixed(1)+'%',b.x,b.y+barH*0.35);chart.ctx.font='9px sans-serif';chart.ctx.fillText(sols[i],b.x,b.y+barH*0.65);}else{chart.ctx.font='bold 9px sans-serif';chart.ctx.textBaseline='bottom';chart.ctx.fillText(v.toFixed(1)+'%',b.x,b.y-2);}chart.ctx.restore();});});}};
     CHS['cFunnelBar']=new Chart(el,{type:'bar',plugins:[_plug],
       data:{labels:['50% Negociación','75% Pre Cierre','Total Funnel'],datasets:[
-        {label:'Head Carlos',data:[47.8,41.6,45.6],backgroundColor:'rgba(249,115,22,.80)',borderColor:'#F97316',borderWidth:1.5,borderRadius:5},
+        {label:'Head Carlos',data:[0,0,0],backgroundColor:'rgba(249,115,22,.80)',borderColor:'#F97316',borderWidth:1.5,borderRadius:5},
         {label:'Head Ana',data:[52.2,58.4,54.4],backgroundColor:'rgba(168,85,247,.80)',borderColor:'#A855F7',borderWidth:1.5,borderRadius:5}
       ]},
       options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',labels:{font:{size:10},boxWidth:10}},tooltip:{callbacks:{label:function(ctx){var s=ctx.datasetIndex===0?_solC:_solA;return ctx.dataset.label+': '+ctx.raw.toFixed(1)+'% = '+s[ctx.dataIndex];}}}},scales:{x:{ticks:{font:{size:10}},grid:{display:false}},y:{max:100,ticks:{callback:function(v){return v+'%';},font:{size:9}},grid:{color:'rgba(0,0,0,.06)'}}}}
@@ -5883,7 +5883,7 @@ function go(id,btn){
 
 
 // -- P8 RUC JUNIO DIA 09 --
-var _rucDistData={labels:['LEONARDO T.', 'MARIA F.', 'ALICIA Q.', 'FRANCO R.', 'JANNIOR S.', 'MELISSA V.', 'MELISA L.', 'ROSA T.', 'ANDREA S.', 'YASMIN C.', 'KEVIN P.', 'OLIVER L.', 'PATRICIA A.', 'ANALIZ C.', 'ROCK L.', 'CRISTIAN H.'],counts:[10, 4, 4, 3, 3, 3, 3, 2, 8, 3, 3, 1, 3, 1, 2, 2],colors:['#8B5CF6', '#EC4899', '#FF8C42', '#F97316', '#E11D48', '#FF6B6B', '#FF6B9D', '#6BCF7F', '#FFD93D', '#888780', '#06B6D4', '#4ECDC4', '#00E5A0', '#F59E0B', '#84CC16', '#00C9FF']};
+var _rucDistData={labels:['LEONARDO T.', 'MARIA F.', 'ALICIA Q.', 'FRANCO R.', 'JANNIOR S.', 'MELISSA V.', 'MELISA L.', 'ROSA T.', 'ANDREA S.', 'YASMIN C.', 'KEVIN P.', 'OLIVER L.', 'PATRICIA A.', 'ANALIZ C.', 'ROCK L.', 'CRISTIAN H.'],counts:[0, 3, 2, 0, 0, 1, 5, 1, 0, 0, 1, 0, 1, 2, 0, 0],colors:['#8B5CF6', '#EC4899', '#FF8C42', '#F97316', '#E11D48', '#FF6B6B', '#FF6B9D', '#6BCF7F', '#FFD93D', '#888780', '#06B6D4', '#4ECDC4', '#00E5A0', '#F59E0B', '#84CC16', '#00C9FF']};
     var _lt25Data=[
   {h:'LEONARDO TORRES',col:'#8B5CF6',r:'PERFUMANIA S.A.C.',ruc:'20611216221',proy:22767.6},
   {h:'ANDREA SOTO',col:'#FFD93D',r:'GRUPO SALUD DENTAL SOCIEDAD ANONIMA CERRADA',ruc:'20609199823',proy:20414.0},
@@ -5950,9 +5950,9 @@ function bP8(){
   var _t=typeof currentTeam!=='undefined'?currentTeam:'all';
 
   // KPI hardcoded values per team
-  var _totMap={all:57,carlos:37,ana:20};
-  var _ge25Map={all:22,carlos:17,ana:5};
-  var _lt25Map={all:35,carlos:20,ana:15};
+  var _totMap={all:16,carlos:11,ana:5};
+  var _ge25Map={all:3,carlos:2,ana:1};
+  var _lt25Map={all:13,carlos:9,ana:4};
   var _total=_totMap[_t]||57;
   var _ge25=_ge25Map[_t]||22;
   var _lt25=_lt25Map[_t]||35;
@@ -6620,10 +6620,10 @@ function updateKPICards(){
       inc_val:'S/.5,217,333', inc_proy:'S/.5,217,333',
       ruc_val:'16', ruc_pct:'29.6', ruc_cuota:'54', ruc_proy:'16',
       fruc_val:'77', fruc_50:'53 cta', fruc_75:'24 cta',
-      qr_val:'70', qr_pct:'129.6', qr_cuota:'54', qr_total:'70',
+      qr_val:'24', qr_pct:'44.4', qr_cuota:'54', qr_total:'24',
       aris_val:'S/.3,256', aris_pct:'93.4', aris_cuota:'S/.3,256', aris_proy:'S/.3,256',
       alic_val:'44 lic', alic_alta:'44 cerradas → S/.3,256', alic_sin:'Sin Alta → 0 lic',
-      cos_m1:'S/.5,513,254.92', cos_m2:'S/.1,470,236.66', cos_m3:'S/.1,132,354.48', cos_tot:'S/.8,115,846.06',
+      cos_m1:'S/.2,394,842.50', cos_m2:'S/.1,463,245.78', cos_m3:'S/.1,136,108.36', cos_tot:'S/.4,994,196.64',
       qr_m1_val:'0', qr_m1_ge:'0', qr_m1_lt:'0',
       qr_m0_val:'24', qr_m0_ge:'14', qr_m0_lt:'10'
     },
@@ -6633,7 +6633,7 @@ function updateKPICards(){
       inc_val:'S/.3,703,333', inc_proy:'S/.3,703,333',
       ruc_val:'0', ruc_pct:'0', ruc_cuota:'21', ruc_proy:'0',
       fruc_val:'39', fruc_50:'35 cta', fruc_75:'4 cta',
-      qr_val:'4', qr_pct:'19.0', qr_cuota:'21', qr_total:'9',
+      qr_val:'13', qr_pct:'48.1', qr_cuota:'27', qr_total:'13',
       aris_val:'S/.180', aris_pct:'12.0', aris_cuota:'S/.1,500', aris_proy:'S/.180',
       alic_val:'3 lic', alic_alta:'3 cerradas → S/.180', alic_sin:'0 pre cierre → S/.0',
       cos_m1:'S/.820,000', cos_m2:'-S/.170,000', cos_m3:'-S/.10,000', cos_tot:'S/.640,000',
@@ -6646,7 +6646,7 @@ function updateKPICards(){
       inc_val:'S/.5,316,667', inc_proy:'S/.5,316,667',
       ruc_val:'3', ruc_pct:'12.5', ruc_cuota:'24', ruc_proy:'3',
       fruc_val:'52', fruc_50:'46 cta', fruc_75:'6 cta',
-      qr_val:'6', qr_pct:'25.0', qr_cuota:'24', qr_total:'16',
+      qr_val:'11', qr_pct:'40.7', qr_cuota:'27', qr_total:'11',
       aris_val:'S/.3,354', aris_pct:'19.3', aris_cuota:'S/.1,740', aris_proy:'S/.3,354',
       alic_val:'45 lic', alic_alta:'0 cerradas → S/.0', alic_sin:'45 pre cierre → S/.3,354',
       cos_m1:'S/.1,427,706', cos_m2:'-S/.301,887', cos_m3:'-S/.19,787', cos_tot:'S/.1,106,033',
