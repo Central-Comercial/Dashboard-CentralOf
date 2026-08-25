@@ -249,7 +249,7 @@ canvas{display:block}
       <!-- RUC 3 circles -->
       <div class="g3" style="margin-bottom:14px">
         <div class="panel">
-          <div class="ph"><div><div class="pt">RUC — Agosto vs Julio</div><div class="ps">44 RUC totales · Dia 23 Agosto · Agosto: 44 · Junio: 0</div></div></div>
+          <div class="ph"><div><div class="pt">RUC — Agosto vs Junio</div><div class="ps">44 RUC totales · Dia 23 Agosto · Agosto: 44 · Junio: 0</div></div></div>
           <div style="position:relative;height:190px"><canvas id="cRucMeses"></canvas></div>
           <div id="cRucMesesLgd" style="display:flex;justify-content:center;gap:12px;margin-top:6px;font-size:10px"></div>
         </div>
@@ -635,7 +635,7 @@ canvas{display:block}
 
       <!-- Tabla RUC — full width -->
       <div class="panel" style="margin-bottom:14px">
-        <div class="ph" style="justify-content:space-between;align-items:center"><div><div class="pt">Tabla RUC — Agosto 2026 · Dia 23</div><div class="ps">Fuente: ACTUAL_31_JULIO.xlsx · hoja RUCS JULIO</div></div><select id="rucHFilt" onchange="bP8()" style="font-size:11px;padding:4px 10px;border:1px solid var(--border);border-radius:8px;background:var(--bg1);color:var(--t1);cursor:pointer"><option value="">Todos los hunters</option><option>ALICIA QUINONES</option><option>ANA CARRERA</option><option>ANALIZ CASTILLO</option><option>ANDREA SOTO</option><option>CRISTIAN HUAMAN</option><option>FRANCO ROUILLON</option><option>KEVIN PAULINO</option><option>MARIA FLORES</option><option>MELISA LLACCHUAS</option><option>MELISSA VASQUEZ</option><option>OLIVER LOPEZ</option><option>PATRICIA ASTORGA</option><option>ROCK LLANOS</option><option>ROSA TORRES</option><option>YASMIN CHECA</option><option>LEONARDO TORRES</option><option>GIULIANA HERENA</option><option>JANNIOR SALAZAR</option><option>RENATO MARSANO</option></select></div>
+        <div class="ph" style="justify-content:space-between;align-items:center"><div><div class="pt">Tabla RUC — Agosto 2026 · Dia 23</div><div class="ps">Fuente: ACTUAL_23_AGOSTO.xlsx · hoja RUC AGOSTO</div></div><select id="rucHFilt" onchange="bP8()" style="font-size:11px;padding:4px 10px;border:1px solid var(--border);border-radius:8px;background:var(--bg1);color:var(--t1);cursor:pointer"><option value="">Todos los hunters</option><option>ALICIA QUINONES</option><option>ANA CARRERA</option><option>ANALIZ CASTILLO</option><option>ANDREA SOTO</option><option>CRISTIAN HUAMAN</option><option>FRANCO ROUILLON</option><option>KEVIN PAULINO</option><option>MARIA FLORES</option><option>MELISA LLACCHUAS</option><option>MELISSA VASQUEZ</option><option>OLIVER LOPEZ</option><option>PATRICIA ASTORGA</option><option>ROCK LLANOS</option><option>ROSA TORRES</option><option>YASMIN CHECA</option><option>LEONARDO TORRES</option><option>GIULIANA HERENA</option><option>JANNIOR SALAZAR</option><option>RENATO MARSANO</option></select></div>
         <div id="rucTabla" style="overflow-x:auto;max-height:540px;overflow-y:auto;padding-right:6px;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.15) transparent"></div>
       </div>
 
@@ -6171,9 +6171,9 @@ function bP8(){
     +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:left;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Hunter / Razón Social</th>'
     +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:left;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">RUC</th>'
     +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:center;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">&gt;25K Proy</th>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:center;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">&gt;25K Jul-31</th>'
+    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:center;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">&gt;25K Ago-23</th>'
     +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:right;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Potencial</th>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:right;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Jul-20</th>'
+    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:right;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Ago-23</th>'
     +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:right;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Proyección</th>'
     +'</tr></thead><tbody>'
     +Object.keys(_grp).map(function(h){
@@ -6478,7 +6478,7 @@ function updateQRKPIs(){
   if(_el2('p6KActVal'))_el2('p6KActVal').textContent=_act;
   if(_el2('p6KActSub'))_el2('p6KActSub').textContent='Activados · Dia 23';
   if(_el2('p6KPendVal'))_el2('p6KPendVal').textContent=_pend;
-  if(_el2('p6KPendSub'))_el2('p6KPendSub').textContent='Pendientes · Jul-20';
+  if(_el2('p6KPendSub'))_el2('p6KPendSub').textContent='Pendientes · Ago-23';
   if(_el2('p6KMontoVal'))_el2('p6KMontoVal').textContent=_montoMap[_t]||_montoMap.all;
 }
 var FUNNEL_DATA=[
