@@ -146,7 +146,7 @@ canvas{display:block}
     <button class="sb-it" onclick="go('p2',this)"><div class="sb-dot"></div>Ranking hunters</button>
     <button class="sb-it" onclick="go('p3',this)" style="display:none"><div class="sb-dot"></div>Graficos por mes</button>
     <div class="sb-sec">Abril 2026</div>
-    <button class="sb-it" onclick="go('p5',this)"><div class="sb-dot"></div>Arisale Agosto</button>
+    <button class="sb-it" onclick="go('p5',this)"><div class="sb-dot"></div>Arisale Setiembre</button>
     <button class="sb-it" onclick="go('p6',this)"><div class="sb-dot"></div>QR Parlante Agosto</button>
     <div class="sb-sec">Detalle</div>
     <button class="sb-it" onclick="go('p7',this)"><div class="sb-dot"></div>Estado cuentas</button>
@@ -169,10 +169,10 @@ canvas{display:block}
         <button class="tab-btn" onclick="go('p2',this)">Ranking</button>
         <button class="tab-btn" onclick="go('p3',this)" style="display:none">Lineas</button>
         <button class="tab-btn" onclick="go('p4',this)" style="display:none">Curva</button>
-        <button class="tab-btn" onclick="go('p5',this)">Arisale Agosto</button>
+        <button class="tab-btn" onclick="go('p5',this)">Arisale Setiembre</button>
         <button class="tab-btn" onclick="go('p6',this)">QR Agosto</button>
         <button class="tab-btn" onclick="go('p7',this)">Cuentas</button>
-        <button class="tab-btn" onclick="go('p8',this)">RUC Agosto</button>
+        <button class="tab-btn" onclick="go('p8',this)">RUC Setiembre</button>
         <button class="tab-btn" onclick="go('p9',this)">Funnel</button>
         <button class="tab-btn" onclick="go('pJunio',this)" style="background:linear-gradient(135deg,rgba(0,229,160,.15),rgba(0,200,150,.1));color:#00C896;font-weight:700;border:1px solid rgba(0,200,150,.25)">📅 Dashboard Junio</button>
       </div>
@@ -206,29 +206,29 @@ canvas{display:block}
 
       <!-- Cosechas -->
       <div class="panel" style="margin-bottom:14px">
-        <div class="ph"><div><div class="pt">Distribución de Cosechas</div><div class="ps">Proyección por mes · Junio a Septiembre · Dia 07 Septiembre</div></div></div>
+        <div class="ph"><div><div class="pt">Distribución de Cosechas</div><div class="ps">Proyección por mes · Mayo a Agosto · Dia 07 Septiembre</div></div></div>
         <div style="position:relative;height:240px"><canvas id="cCosecha"></canvas></div>
       </div>
 
       <!-- Funnel Pie + Bar -->
       <div class="g2" style="margin-bottom:14px">
         <div class="panel">
-          <div class="ph"><div><div class="pt">Funnel — Distribución por Etapa</div><div class="ps">Sep-07 · 50%: S/.0 · 75%: S/.0</div></div></div>
+          <div class="ph"><div><div class="pt">Funnel — Distribución por Etapa</div><div class="ps">Corte 09-Ago · 50%: S/.412,258 · 75%: S/.218,065</div></div></div>
           <div style="display:flex;align-items:center;gap:16px">
             <div style="position:relative;height:220px;flex:1"><canvas id="cFunnelPie"></canvas></div>
             <div style="min-width:130px;padding:12px 16px;background:rgba(0,0,0,.03);border-radius:10px;border:1px solid rgba(0,0,0,.08)">
               <div style="font-size:9px;font-weight:700;text-transform:uppercase;color:var(--t3);letter-spacing:.06em;margin-bottom:10px">Total Funnel</div>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
                 <span style="font-size:11px;color:#3B82F6;font-weight:600">50% (53 cta)</span>
-                <span style="font-size:12px;font-family:Space Mono,monospace;color:#3B82F6;font-weight:700">S/.0.00M</span>
+                <span style="font-size:12px;font-family:Space Mono,monospace;color:#3B82F6;font-weight:700">S/.0.41M</span>
               </div>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
                 <span style="font-size:11px;color:#22C55E;font-weight:600">75% (24 cta)</span>
-                <span style="font-size:12px;font-family:Space Mono,monospace;color:#22C55E;font-weight:700">S/.0.00M</span>
+                <span style="font-size:12px;font-family:Space Mono,monospace;color:#22C55E;font-weight:700">S/.0.22M</span>
               </div>
               <div style="border-top:1px solid rgba(0,0,0,.10);padding-top:10px">
                 <div style="font-size:9px;font-weight:700;text-transform:uppercase;color:var(--t3);letter-spacing:.06em;margin-bottom:4px">Total</div>
-                <div style="font-size:15px;font-family:Space Mono,monospace;font-weight:800;color:var(--t1)">S/.0.00M</div>
+                <div style="font-size:15px;font-family:Space Mono,monospace;font-weight:800;color:var(--t1)">S/.0.63M</div>
               </div>
             </div>
           </div>
@@ -242,19 +242,19 @@ canvas{display:block}
 
       <!-- Cumplimiento Captura -->
       <div class="panel" style="margin-bottom:14px">
-        <div class="ph"><div><div class="pt">Cumplimiento Captura — Dia 07 Septiembre</div><div class="ps">Real (sin resta) vs Cuota · Senior S/.300K · Junior S/.250K · 19 hunters</div></div></div>
+        <div class="ph"><div><div class="pt">Cumplimiento Captura — Dia 07 Septiembre</div><div class="ps">Real (sin resta) vs Cuota · Senior S/.280K · Junior S/.250K · 17 hunters</div></div></div>
         <div style="position:relative;height:300px"><canvas id="cCumpl"></canvas></div>
       </div>
 
       <!-- RUC 3 circles -->
       <div class="g3" style="margin-bottom:14px">
         <div class="panel">
-          <div class="ph"><div><div class="pt">RUC — Agosto vs Junio</div><div class="ps">56 RUC totales · Dia 07 Septiembre · Septiembre: 56 · Agosto: 0</div></div></div>
+          <div class="ph"><div><div class="pt">RUC — Agosto vs Junio</div><div class="ps">44 RUC totales · Dia 07 Septiembre · Agosto: 44 · Junio: 0</div></div></div>
           <div style="position:relative;height:190px"><canvas id="cRucMeses"></canvas></div>
           <div id="cRucMesesLgd" style="display:flex;justify-content:center;gap:12px;margin-top:6px;font-size:10px"></div>
         </div>
         <div class="panel">
-          <div class="ph"><div><div class="pt">RUC >&lt; o = A 25k</div><div class="ps">≥25K: 14 · &lt;25K: 42 · Funnel: 0 · Total: 56</div></div></div>
+          <div class="ph"><div><div class="pt">RUC >&lt; o = A 25k</div><div class="ps">≥25K: 12 · &lt;25K: 35 · Funnel: 77 · Total: 47</div></div></div>
           <div style="display:flex;align-items:center;gap:14px">
             <div style="position:relative;height:190px;flex:1"><canvas id="cRucPot"></canvas></div>
             <div style="min-width:110px;padding:10px 14px;background:rgba(0,0,0,.03);border-radius:10px;border:1px solid rgba(0,0,0,.08)">
@@ -269,38 +269,38 @@ canvas{display:block}
               </div>
               <div style="border-top:1px solid rgba(0,0,0,.08);padding-top:6px">
                 <div style="font-size:9px;color:var(--t3);margin-bottom:2px">Total Funnel</div>
-                <div style="font-size:14px;font-weight:800;color:#3B82F6">0 RUC</div>
+                <div style="font-size:14px;font-weight:800;color:#3B82F6">77 RUC</div>
               </div>
             </div>
           </div>
           <div id="cRucPotLgd" style="display:flex;justify-content:center;gap:12px;margin-top:6px;font-size:10px"></div>
         </div>
         <div class="panel">
-          <div class="ph"><div><div class="pt">RUC — Contribución por Equipo</div><div class="ps">Agosto: Carlos 30 · Ana 26 · Dia 07 Sep</div></div></div>
+          <div class="ph"><div><div class="pt">RUC — Contribución por Equipo</div><div class="ps">Agosto: C13/A3 · Funnel 50%: C29/A24 · 75%: C17/A7 · Dia 07</div></div></div>
           <div style="position:relative;height:190px"><canvas id="cRucTeam"></canvas></div>
         </div>
       </div>
 
       <!-- RUC Cumplimiento -->
       <div class="panel" style="margin-bottom:14px">
-        <div class="ph"><div><div class="pt">RUC Cumplimiento — Dia 07 Septiembre</div><div class="ps">RUC Septiembre por hunter vs cuota (Senior=3 · Junior=3) · 14 hunters</div></div></div>
+        <div class="ph"><div><div class="pt">RUC Cumplimiento — Dia 07 Septiembre</div><div class="ps">RUC Junio por hunter vs cuota (Senior=3 · Junior=3) · 14 hunters</div></div></div>
         <div style="position:relative;height:280px"><canvas id="cRucCumpl"></canvas></div>
       </div>
 
       <!-- QR 3 circles -->
       <div class="g3" style="margin-bottom:14px">
         <div class="panel">
-          <div class="ph"><div><div class="pt">QR — Estado</div><div class="ps">≥500 Activos: 11 · <500 Pendientes: 1 · Total 12</div></div></div>
+          <div class="ph"><div><div class="pt">QR — Estado</div><div class="ps">≥500 Activos: 45 · <500 Pendientes: 25 · Total 70</div></div></div>
           <div style="position:relative;height:190px"><canvas id="cQrEstado"></canvas></div>
           <div id="cQrEstadoLgd" style="display:flex;justify-content:center;gap:12px;margin-top:6px;font-size:10px"></div>
         </div>
         <div class="panel">
-          <div class="ph"><div><div class="pt">QR Contribución por Equipo</div><div class="ps">Carlos 7 · Ana 5 · Total 12 · Cuota 54</div></div></div>
+          <div class="ph"><div><div class="pt">QR Contribución por Equipo</div><div class="ps">Carlos 7 · Ana 5 · Total 12 · Cuota 74</div></div></div>
           <div style="position:relative;height:190px"><canvas id="cQrActivos"></canvas></div>
           <div id="cQrActivosLgd" style="display:flex;justify-content:center;gap:12px;margin-top:6px;font-size:10px"></div>
         </div>
         <div class="panel">
-          <div class="ph"><div><div class="pt">QR Facturación — Septiembre 2026</div><div class="ps">Septiembre: 12 QR = S/.68,457.17 · Agosto: 97 QR</div></div></div>
+          <div class="ph"><div><div class="pt">QR Facturación — Septiembre 2026</div><div class="ps">Agosto: 24 QR = S/.19,480.16 · Julio: 70 QR = S/.396,290.64</div></div></div>
           <div style="position:relative;height:190px"><canvas id="cQrFact"></canvas></div>
           <div id="cQrFactLgd" style="display:flex;justify-content:center;gap:12px;margin-top:6px;font-size:10px"></div>
         </div>
@@ -308,19 +308,19 @@ canvas{display:block}
 
       <!-- QR Cumplimiento -->
       <div class="panel" style="margin-bottom:14px">
-        <div class="ph"><div><div class="pt">QR Cumplimiento — Dia 07 Septiembre</div><div class="ps">QR Parlante Septiembre activos vs cuota (Senior=3 · Junior=3) · 14 hunters</div></div></div>
+        <div class="ph"><div><div class="pt">QR Cumplimiento — Dia 07 Septiembre</div><div class="ps">QR Parlante Agosto activos vs cuota (Senior=3 · Junior=3) · 14 hunters</div></div></div>
         <div style="position:relative;height:280px"><canvas id="cQrCumpl"></canvas></div>
       </div>
 
       <!-- Arisale 2 circles -->
       <div class="g3" style="margin-bottom:14px">
         <div class="panel">
-          <div class="ph"><div><div class="pt">Arisale — Estado Alta Sunat</div><div class="ps">Con alta: 0 · Sin alta: 0 · Total 0 lic · Dia 07 Septiembre</div></div></div>
+          <div class="ph"><div><div class="pt">Arisale — Estado Alta Sunat</div><div class="ps">Con alta: 31 · Sin alta: 0 · Total 31 lic · Dia 07 Septiembre</div></div></div>
           <div style="position:relative;height:200px"><canvas id="cArisEstado"></canvas></div>
           <div id="cArisEstadoLgd" style="display:flex;justify-content:center;gap:14px;margin-top:8px;font-size:10px"></div>
         </div>
         <div class="panel">
-          <div class="ph"><div><div class="pt">Arisale Con Alta — 0 lic</div><div class="ps">Head Ana 0 · Head Carlos 0 · Dia 07 Septiembre</div></div></div>
+          <div class="ph"><div><div class="pt">Arisale Con Alta — 31 lic</div><div class="ps">Head Ana 33 · Head Carlos 7 · Dia 07 Septiembre</div></div></div>
           <div style="position:relative;height:200px"><canvas id="cArisTeam"></canvas></div>
           <div id="cArisTeamLgd" style="display:flex;justify-content:center;gap:14px;margin-top:8px;font-size:10px"></div>
         </div>
@@ -341,7 +341,7 @@ canvas{display:block}
       <div class="panel" style="margin-bottom:14px">
         <div class="ph"><div>
           <div class="pt">Score % meta — Septiembre 2026</div>
-          <div class="ps">Captura 65% + SVA 35% (RUC×4 + QR×1 + Arisale/59 + Planillas×4) · Dia 07 Septiembre · 19 hunters</div>
+          <div class="ps">Captura 65% + SVA 35% (RUC×4 + QR×1 + Arisale/59 + Planillas×4) · Dia 07 Septiembre · 17 hunters</div>
         </div></div>
         <div style="position:relative;height:280px"><canvas id="cSco"></canvas></div>
       </div>
@@ -350,7 +350,7 @@ canvas{display:block}
   <div class="ph">
     <div>
       <div class="pt">Ranking SVA — Septiembre 2026 · Dia 07</div>
-      <div class="ps">Sistema de Puntos · Sep-07 · RUC 4pts (capturados) · QR 1pt (≥S/500) · Arisale/59</div>
+      <div class="ps">Sistema de Puntos · Corte 09-Ago · RUC 4pts (capturados) · QR 1pt (≥S/500) · Arisale 1pt/S60 (cerrados) · Planillas 4pts · Meta: Junior 26 / Senior 27</div>
     </div>
     <div style="display:flex;gap:8px;align-items:center">
       <select id="svaTeamFilt" onchange="bPSVA()" style="font-size:11px;padding:4px 8px;border:1px solid var(--border);border-radius:6px;background:var(--bg1);color:var(--t1)">
@@ -449,7 +449,7 @@ canvas{display:block}
   </div>
 </div>
 <div id="p2" class="pg">
-      <div style="font-size:13px;font-weight:600;color:var(--t1);margin-bottom:14px">Ranking completo — 19 hunters <span style="font-size:11px;color:var(--t3);font-weight:400">· Captura 65% + SVA 35% (RUC×4 + QR×1 + Arisale/59 + Planillas×4) · Agosto dia 09</span></div>
+      <div style="font-size:13px;font-weight:600;color:var(--t1);margin-bottom:14px">Ranking completo — 17 hunters <span style="font-size:11px;color:var(--t3);font-weight:400">· Captura 65% + SVA 35% (RUC×4 + QR×1 + Arisale/59 + Planillas×4) · Agosto dia 09</span></div>
       <div class="rl" id="rkList"></div>
     </div>
 
@@ -541,7 +541,7 @@ canvas{display:block}
     <div class="panel" style="padding:14px">
       <div style="font-size:9px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">QR Activos</div>
       <div id="p6KActVal" style="font-size:28px;font-weight:800;color:#00E5A0;font-family:var(--m)">45</div>
-      <div style="font-size:10px;color:var(--t2);margin-top:2px">Activados · Cuota: 54 · Dia 07</div>
+      <div style="font-size:10px;color:var(--t2);margin-top:2px">Activados · Cuota: 74 · Dia 07</div>
     </div>
     <div class="panel" style="padding:14px">
       <div style="font-size:9px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">Pendientes</div>
@@ -659,9 +659,9 @@ canvas{display:block}
   <div id="p9" class="pg">
   <div class="krow k4" style="margin-bottom:14px">
     <div class="kcard"><div class="klbl">TOTAL FUNNEL</div><div id="f9Tot" class="kval" style="color:#A855F7">S/.9.77M</div><div class="bge">77 oportunidades · Proy: S/.630,323 · Dia 07 Sep</div></div>
-    <div class="kcard"><div class="klbl">75% PRE CIERRE</div><div id="f9Neg" class="kval" style="color:#F59E0B">S/.3.38M</div><div class="bge">0 cuentas · Proy: S/.0</div></div>
-    <div class="kcard"><div class="klbl">50% NEGOCIACIÓN</div><div id="f9Neg2" class="kval" style="color:#A855F7">S/.6.39M</div><div class="bge">0 cuentas · Proy: S/.0</div></div>
-    <div class="kcard"><div class="klbl">ANA / CARLOS</div><div id="f9Head" class="kval" style="color:#3B82F6">S/.5.31M / S/.4.46M</div><div class="bge">Ana 0% · Carlos 45.6%</div></div>
+    <div class="kcard"><div class="klbl">75% PRE CIERRE</div><div id="f9Neg" class="kval" style="color:#F59E0B">S/.3.38M</div><div class="bge">24 cuentas · Proy: S/.218,065</div></div>
+    <div class="kcard"><div class="klbl">50% NEGOCIACIÓN</div><div id="f9Neg2" class="kval" style="color:#A855F7">S/.6.39M</div><div class="bge">53 cuentas · Proy: S/.412,258</div></div>
+    <div class="kcard"><div class="klbl">ANA / CARLOS</div><div id="f9Head" class="kval" style="color:#3B82F6">S/.5.31M / S/.4.46M</div><div class="bge">Ana 54.4% · Carlos 45.6%</div></div>
   </div>
   <div class="panel" style="padding:0">
     <div class="ph" style="padding:12px 16px"><div><div class="pt">Pipeline Funnel — Septiembre 2026 · Dia 07</div><div class="ps">77 oportunidades · S/.9,770,000 potencial · Proy: S/.630,323 · Dia 07 Septiembre</div></div><select id="f9FiltEtapa" onchange="bP9()" style="font-size:11px;padding:4px 8px;border:1px solid var(--border);border-radius:6px;background:var(--bg1);color:var(--t1)"><option value="">Todas las etapas</option><option>75% Pre-cierre</option><option>50% Negociación</option></select></div>
@@ -958,7 +958,7 @@ canvas{display:block}
 
       <!-- RUC Cumplimiento -->
       <div class=&quot;panel&quot; style=&quot;margin-bottom:14px&quot;>
-        <div class=&quot;ph&quot;><div><div class=&quot;pt&quot;>RUC Cumplimiento — Dia 30 Junio</div><div class=&quot;ps&quot;>RUC Septiembre por hunter vs cuota (Senior=3 · Junior=3) · 14 hunters</div></div></div>
+        <div class=&quot;ph&quot;><div><div class=&quot;pt&quot;>RUC Cumplimiento — Dia 30 Junio</div><div class=&quot;ps&quot;>RUC Junio por hunter vs cuota (Senior=3 · Junior=3) · 14 hunters</div></div></div>
         <div style=&quot;position:relative;height:280px&quot;><canvas id=&quot;cRucCumpl&quot;></canvas></div>
       </div>
 
@@ -2002,7 +2002,7 @@ const CTS2=[
 {&quot;h&quot;:&quot;ROSA TORRES&quot;,&quot;col&quot;:&quot;#6BCF7F&quot;,&quot;team&quot;:&quot;carlos&quot;,&quot;r&quot;:&quot;DYNAMIC MOTORS E.I.R.L&quot;,&quot;ruc&quot;:&quot;20602789749&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;t&quot;:&quot;FISICO&quot;,&quot;pot&quot;:25000.0,&quot;f&quot;:0,&quot;m&quot;:0,&quot;a30&quot;:0,&quot;m31&quot;:0,&quot;jun30&quot;:0.0,&quot;proy&quot;:0.0},
 {&quot;h&quot;:&quot;ALICIA QUINONES&quot;,&quot;col&quot;:&quot;#FF8C42&quot;,&quot;team&quot;:&quot;ana&quot;,&quot;r&quot;:&quot;Creatividad En Alimentos S.A.C&quot;,&quot;ruc&quot;:&quot;20610417486&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;t&quot;:&quot;NEWS&quot;,&quot;pot&quot;:30000.0,&quot;f&quot;:0,&quot;m&quot;:0,&quot;a30&quot;:0,&quot;m06&quot;:0,&quot;m10&quot;:0,&quot;m12&quot;:0,&quot;m14&quot;:0,&quot;m17&quot;:0,&quot;m19&quot;:0,&quot;m21&quot;:0,&quot;m24&quot;:0,&quot;m25&quot;:0,&quot;m28&quot;:0,&quot;m31&quot;:0.0,&quot;p&quot;:0.0,&quot;jun02&quot;:0.0,&quot;proy&quot;:53418.992,&quot;jun07&quot;:7.9567,&quot;jun09&quot;:2567.2454,&quot;jun14&quot;:7322.2439,&quot;jun16&quot;:11616.5132,&quot;jun21&quot;:28194.122,&quot;jun23&quot;:38078.612,&quot;jun30&quot;:53418.992},
 {&quot;h&quot;:&quot;KEVIN PAULINO&quot;,&quot;col&quot;:&quot;#06B6D4&quot;,&quot;team&quot;:&quot;carlos&quot;,&quot;r&quot;:&quot;FB IMPORTACIONES COMPANY EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA&quot;,&quot;ruc&quot;:&quot;20615065022&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;t&quot;:&quot;FISICO&quot;,&quot;pot&quot;:30000.0,&quot;f&quot;:1.0,&quot;m&quot;:0,&quot;a30&quot;:0,&quot;m31&quot;:0,&quot;jun21&quot;:50806.8,&quot;proy&quot;:80117.433,&quot;jun23&quot;:53977.275,&quot;jun30&quot;:80117.433},
-{&quot;h&quot;:&quot;ROSA TORRES&quot;,&quot;col&quot;:&quot;#6BCF7F&quot;,&quot;team&quot;:&quot;carlos&quot;,&quot;r&quot;:&quot;BEIT GROUP PERU S.A.C. - PILLIN&quot;,&quot;ruc&quot;:&quot;20605867163&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;t&quot;:&quot;FISICO&quot;,&quot;pot&quot;:25000.0,&quot;f&quot;:0,&quot;m&quot;:0,&quot;a30&quot;:0,&quot;m31&quot;:0,&quot;jun30&quot;:0.0,&quot;proy&quot;:0.0},
+{&quot;h&quot;:&quot;ROSA TORRES&quot;,&quot;col&quot;:&quot;#6BCF7F&quot;,&quot;team&quot;:&quot;carlos&quot;,&quot;r&quot;:&quot;BEIT GROUP PERU S.A.C. - PILLIN&quot;,&quot;ruc&quot;:&quot;20605867163&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;t&quot;:&quot;FISICO&quot;,&quot;pot&quot;:25000.0,&quot;f&quot;:0,&quot;m&quot;:0,&quot;a30&quot;:0,&quot;m31&quot;:0,&quot;jun30&quot;:0.0,&quot;proy&quot;:0.0},
 {&quot;h&quot;:&quot;MELISSA VASQUEZ&quot;,&quot;col&quot;:&quot;#FF6B6B&quot;,&quot;team&quot;:&quot;carlos&quot;,&quot;r&quot;:&quot;CIUDADOMUJER SAC&quot;,&quot;ruc&quot;:&quot;20613034031&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;t&quot;:&quot;FISICO&quot;,&quot;pot&quot;:30000.0,&quot;f&quot;:0,&quot;m&quot;:0,&quot;a30&quot;:0,&quot;m31&quot;:0,&quot;jun30&quot;:19078.983,&quot;proy&quot;:19078.983},
 {&quot;h&quot;:&quot;ANALIZ CASTILLO&quot;,&quot;col&quot;:&quot;#F59E0B&quot;,&quot;team&quot;:&quot;ana&quot;,&quot;r&quot;:&quot;BRISA ASOCIADOS S.A.C.&quot;,&quot;ruc&quot;:&quot;20605268812&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;t&quot;:&quot;FISICO&quot;,&quot;pot&quot;:130000.0,&quot;f&quot;:0,&quot;m&quot;:0,&quot;a30&quot;:0,&quot;m31&quot;:0,&quot;jun30&quot;:147093.21,&quot;proy&quot;:147093.21},
 {&quot;h&quot;:&quot;MELISSA VASQUEZ&quot;,&quot;col&quot;:&quot;#FF6B6B&quot;,&quot;team&quot;:&quot;carlos&quot;,&quot;r&quot;:&quot;M Y M MULTISERVICIOS AUDIOVISUALES E.I.R.L.&quot;,&quot;ruc&quot;:&quot;20615329551&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;t&quot;:&quot;FISICO&quot;,&quot;pot&quot;:100000.0,&quot;f&quot;:0,&quot;m&quot;:0,&quot;a30&quot;:0,&quot;m31&quot;:0,&quot;jun30&quot;:0.0,&quot;proy&quot;:0.0},
@@ -2516,7 +2516,7 @@ function bP1(){
   (function(){
     var el=document.getElementById('cArisEstado');if(!el)return;
     var _cAE={id:'cArisEstadoLbl31',afterDatasetsDraw:function(chart){var ctx=chart.ctx,ds=chart.data.datasets[0];var total=ds.data.reduce(function(a,b){return a+b;},0);chart.getDatasetMeta(0).data.forEach(function(arc,i){var v=ds.data[i];if(v<=0)return;var mid=(arc.startAngle+arc.endAngle)/2,r=(arc.outerRadius+arc.innerRadius)/2;var x=arc.x+Math.cos(mid)*r,y=arc.y+Math.sin(mid)*r;var pct=Math.round(v/total*100);ctx.save();ctx.fillStyle='#fff';ctx.font='bold 11px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(v,x,y-6);ctx.fillText('('+pct+'%)',x,y+7);ctx.restore();});}};
-    CHS['cArisEstado']=new Chart(el,{type:'doughnut',plugins:[_cAE],data:{labels:['Con Alta Sunat','Sin Alta Sunat'],datasets:[{data:[0,0],backgroundColor:['rgba(0,229,160,.82)','rgba(239,68,68,.75)'],borderColor:['#00E5A0','#EF4444'],borderWidth:2,hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'62%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ctx.label+': '+ctx.raw+' lic';}}}}}});
+    CHS['cArisEstado']=new Chart(el,{type:'doughnut',plugins:[_cAE],data:{labels:['Con Alta Sunat','Sin Alta Sunat'],datasets:[{data:[26,15],backgroundColor:['rgba(0,229,160,.82)','rgba(239,68,68,.75)'],borderColor:['#00E5A0','#EF4444'],borderWidth:2,hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'62%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ctx.label+': '+ctx.raw+' lic';}}}}}});
     var l=document.getElementById('cArisEstadoLgd'),sp='display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;background:';
     if(l)l.innerHTML='<span><span style=&quot;'+sp+'#00E5A0&quot;></span>Con alta: 0 lic</span>'+'<span style=&quot;margin-left:8px&quot;><span style=&quot;'+sp+'#EF4444&quot;></span>Sin alta: 15 lic</span>';
   })();
@@ -2535,7 +2535,7 @@ function bP1(){
   (function(){
     var el=document.getElementById('cArisSinAlta');if(!el)return;
     var _plug={id:'asa31',afterDatasetsDraw:function(chart){var ctx=chart.ctx,ds=chart.data.datasets[0];var total=ds.data.reduce(function(a,b){return a+b;},0);chart.getDatasetMeta(0).data.forEach(function(arc,i){var v=ds.data[i];if(v<=0)return;var mid=(arc.startAngle+arc.endAngle)/2;var r2=(arc.outerRadius+arc.innerRadius)/2;var x=arc.x+Math.cos(mid)*r2,y=arc.y+Math.sin(mid)*r2;var pct=Math.round(v/total*100);ctx.save();ctx.fillStyle='#fff';ctx.font='bold 11px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(v+' lic',x,y-6);ctx.fillText('('+pct+'%)',x,y+7);ctx.restore();})}};
-    CHS['cArisSinAlta']=new Chart(el,{type:'doughnut',plugins:[_plug],data:{labels:['Sin Alta','Cerradas'],datasets:[{data:[0,0],backgroundColor:['rgba(239,68,68,.75)','rgba(0,229,160,.82)'],borderColor:['#EF4444','#00E5A0'],borderWidth:2,hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'58%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ctx.label+': '+ctx.raw+' lic';}}}}}});
+    CHS['cArisSinAlta']=new Chart(el,{type:'doughnut',plugins:[_plug],data:{labels:['Sin Alta','Cerradas'],datasets:[{data:[15,26],backgroundColor:['rgba(239,68,68,.75)','rgba(0,229,160,.82)'],borderColor:['#EF4444','#00E5A0'],borderWidth:2,hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'58%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ctx.label+': '+ctx.raw+' lic';}}}}}});
     var l=document.getElementById('cArisSinAltaLgd'),sp='display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;background:';
     if(l)l.innerHTML='<span><span style=&quot;'+sp+'#00E5A0&quot;></span>26 lic cerradas con Alta Sunat</span><span style=&quot;margin-left:8px&quot;><span style=&quot;'+sp+'#EF4444&quot;></span>15 lic Sin Alta Sunat</span>';
   })();
@@ -3460,7 +3460,7 @@ var _rucDistData={labels:['ROSA TORRES', 'CRISTIAN HUAMAN', 'ANDREA SOTO', 'FRAN
     {h:'ANDREA SOTO',col:'#FFD93D',r:'INVERSIONES REALNA SAC',ruc:'20611436786',proy:12205.22},
     {h:'ALICIA QUINONES',col:'#FF8C42',r:'WOSAK SAC',ruc:'20547709013',proy:0.0},
     {h:'ROSA TORRES',col:'#6BCF7F',r:'DYNAMIC MOTORS E.I.R.L',ruc:'20602789749',proy:0.0},
-    {h:'ROSA TORRES',col:'#6BCF7F',r:'BEIT GROUP PERU S.A.C. - PILLIN',ruc:'20605867163',proy:0.0},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'BEIT GROUP PERU S.A.C. - PILLIN',ruc:'20605867163',proy:0.0},
     {h:'MELISSA VASQUEZ',col:'#FF6B6B',r:'CIUDADOMUJER SAC',ruc:'20613034031',proy:19078.98},
     {h:'MELISSA VASQUEZ',col:'#FF6B6B',r:'M Y M MULTISERVICIOS AUDIOVISUALES E.I.R.L.',ruc:'20615329551',proy:0.0},
     {h:'MELISSA VASQUEZ',col:'#FF6B6B',r:'Importaciones Import Export Leo E.I.R.L.',ruc:'20610272291',proy:1.1},
@@ -3553,7 +3553,7 @@ function bP8(){
     {h:'ROSA TORRES',col:'#6BCF7F',r:'DYNAMIC MOTORS E.I.R.L',banco:'BCP',ruc:'20602789749',m1:'NO',m0:'NO',pot:25000,jun:0.0,proy:0.0},
     {h:'ALICIA QUINONES',col:'#FF8C42',r:'Creatividad En Alimentos S.A.C',banco:'IBK PRIVADA',ruc:'20610417486',m1:'NO',m0:'SI',pot:80000,jun:53418.99,proy:53418.99},
     {h:'KEVIN PAULINO',col:'#06B6D4',r:'FB IMPORTACIONES COMPANY EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA',banco:'BCP',ruc:'20615065022',m1:'NO',m0:'SI',pot:80000,jun:80117.43,proy:80117.43},
-    {h:'ROSA TORRES',col:'#6BCF7F',r:'BEIT GROUP PERU S.A.C. - PILLIN',banco:'IBK PRIVADA',ruc:'20605867163',m1:'NO',m0:'NO',pot:25000,jun:0.0,proy:0.0},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'BEIT GROUP PERU S.A.C. - PILLIN',banco:'IBK PRIVADA',ruc:'20605867163',m1:'NO',m0:'NO',pot:25000,jun:0.0,proy:0.0},
     {h:'MELISSA VASQUEZ',col:'#FF6B6B',r:'CIUDADOMUJER SAC',banco:'BBVA',ruc:'20613034031',m1:'NO',m0:'NO',pot:30000,jun:19078.98,proy:19078.98},
     {h:'ANALIZ CASTILLO',col:'#F59E0B',r:'BRISA ASOCIADOS S.A.C.',banco:'BCP',ruc:'20605268812',m1:'NO',m0:'SI',pot:130000,jun:147093.21,proy:147093.21},
     {h:'MELISSA VASQUEZ',col:'#FF6B6B',r:'M Y M MULTISERVICIOS AUDIOVISUALES E.I.R.L.',banco:'BCP',ruc:'20615329551',m1:'NO',m0:'NO',pot:100000,jun:0.0,proy:0.0},
@@ -3828,7 +3828,7 @@ const COSECHAS_DATA=[
 {&quot;h&quot;:&quot;ROSA TORRES&quot;,&quot;col&quot;:&quot;#6BCF7F&quot;,&quot;team&quot;:&quot;carlos&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;r&quot;:&quot;DYNAMIC MOTORS E.I.R.L&quot;,&quot;t&quot;:&quot;FISICO&quot;,&quot;pot&quot;:25000.0,&quot;mar&quot;:0,&quot;abr&quot;:0,&quot;may&quot;:0,&quot;jun&quot;:0.0,&quot;inc&quot;:4.0},
 {&quot;h&quot;:&quot;ALICIA QUINONES&quot;,&quot;col&quot;:&quot;#FF8C42&quot;,&quot;team&quot;:&quot;ana&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;r&quot;:&quot;Creatividad En Alimentos S.A.C&quot;,&quot;t&quot;:&quot;FISICO&quot;,&quot;pot&quot;:80000.0,&quot;mar&quot;:0,&quot;abr&quot;:0,&quot;may&quot;:0,&quot;jun&quot;:48562.72,&quot;inc&quot;:5.0},
 {&quot;h&quot;:&quot;KEVIN PAULINO&quot;,&quot;col&quot;:&quot;#06B6D4&quot;,&quot;team&quot;:&quot;carlos&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;r&quot;:&quot;FB IMPORTACIONES COMPANY EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA&quot;,&quot;t&quot;:&quot;FISICO&quot;,&quot;pot&quot;:80000.0,&quot;mar&quot;:0,&quot;abr&quot;:0,&quot;may&quot;:0,&quot;jun&quot;:80926.7,&quot;inc&quot;:6.0},
-{&quot;h&quot;:&quot;ROSA TORRES&quot;,&quot;col&quot;:&quot;#6BCF7F&quot;,&quot;team&quot;:&quot;carlos&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;r&quot;:&quot;BEIT GROUP PERU S.A.C. - PILLIN&quot;,&quot;t&quot;:&quot;FISICO&quot;,&quot;pot&quot;:25000.0,&quot;mar&quot;:0,&quot;abr&quot;:0,&quot;may&quot;:0,&quot;jun&quot;:0.0,&quot;inc&quot;:7.0},
+{&quot;h&quot;:&quot;ROSA TORRES&quot;,&quot;col&quot;:&quot;#6BCF7F&quot;,&quot;team&quot;:&quot;carlos&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;r&quot;:&quot;BEIT GROUP PERU S.A.C. - PILLIN&quot;,&quot;t&quot;:&quot;FISICO&quot;,&quot;pot&quot;:25000.0,&quot;mar&quot;:0,&quot;abr&quot;:0,&quot;may&quot;:0,&quot;jun&quot;:0.0,&quot;inc&quot;:7.0},
 {&quot;h&quot;:&quot;MELISSA VASQUEZ&quot;,&quot;col&quot;:&quot;#FF6B6B&quot;,&quot;team&quot;:&quot;carlos&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;r&quot;:&quot;CIUDADOMUJER SAC&quot;,&quot;t&quot;:&quot;FISICO&quot;,&quot;pot&quot;:30000.0,&quot;mar&quot;:0,&quot;abr&quot;:0,&quot;may&quot;:0,&quot;jun&quot;:19271.7,&quot;inc&quot;:8.0},
 {&quot;h&quot;:&quot;ANALIZ CASTILLO&quot;,&quot;col&quot;:&quot;#F59E0B&quot;,&quot;team&quot;:&quot;ana&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;r&quot;:&quot;BRISA ASOCIADOS S.A.C.&quot;,&quot;t&quot;:&quot;FISICO&quot;,&quot;pot&quot;:130000.0,&quot;mar&quot;:0,&quot;abr&quot;:0,&quot;may&quot;:0,&quot;jun&quot;:148579.0,&quot;inc&quot;:9.0},
 {&quot;h&quot;:&quot;MELISSA VASQUEZ&quot;,&quot;col&quot;:&quot;#FF6B6B&quot;,&quot;team&quot;:&quot;carlos&quot;,&quot;mes&quot;:&quot;JUNIO&quot;,&quot;r&quot;:&quot;M Y M MULTISERVICIOS AUDIOVISUALES E.I.R.L.&quot;,&quot;t&quot;:&quot;FISICO&quot;,&quot;pot&quot;:100000.0,&quot;mar&quot;:0,&quot;abr&quot;:0,&quot;may&quot;:0,&quot;jun&quot;:0.0,&quot;inc&quot;:9.0},
@@ -4191,7 +4191,7 @@ function updateKPICards(){
       +sp('#A855F7','M3: '+d.cos_m3)
       +sm('Total: '+d.cos_tot))
     // 3. Cosechas M0 + Funnel — global
-    +kpi('linear-gradient(90deg,#F59E0B,#22C55E)','Cosechas M0 + Funnel',d.funnel_val,'#F59E0B',
+    +kpi('linear-gradient(90deg,#F59E0B,#22C55E)','Cosechas M0 + Funnel','S/. 0','#F59E0B',
       sp('#F59E0B','M0: S/.1,448,211')
       +sp('#22C55E','Funnel: S/.0'))
     +'</div>';
@@ -4216,8 +4216,8 @@ function updateKPICards(){
   var row3='<div class=&quot;krow&quot; style=&quot;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:10px&quot;>'
     // 7. QR Proyectado
     +kpi('linear-gradient(90deg,#A855F7,#7C3AED)','QR Proyectado',d.qr_val,'#A855F7',
-      bar4('#A855F7',parseFloat(d.qr_val)/42*100)
-      +sp('#A855F7',Math.round(parseFloat(d.qr_val)/42*100)+'% · Cuota: '+d.qr_cuota+' QR')
+      bar4('#A855F7',parseFloat(d.qr_val)/parseFloat(d.qr_cuota)*100)
+      +sp('#A855F7',Math.round(parseFloat(d.qr_val)/parseFloat(d.qr_cuota)*100)+'% · Cuota: '+d.qr_cuota+' QR')
       +sp('#22C55E','Total: '+d.qr_total+' registros'))
     // 8. QR M1 Mayo
     +kpi('linear-gradient(90deg,#3B82F6,#6366F1)','QR M1 Mayo',d.qr_m1_val,'#3B82F6',
@@ -4893,19 +4893,19 @@ function bP1(){
     }};
     CHS['cFunnelPie']=new Chart(_fPie,{type:'doughnut',plugins:[_cFPLbl],
       data:{labels:['50% Negociacion','75% Pre Cierre'],datasets:[{
-        data:[0,0],
+        data:[412258.06,218064.52],
         backgroundColor:['rgba(59,130,246,.85)','rgba(34,197,94,.85)'],
         borderColor:['#3B82F6','#22C55E'],borderWidth:2,hoverOffset:8
       }]},
       options:{responsive:true,maintainAspectRatio:false,cutout:'60%',
         plugins:{legend:{display:false},
           tooltip:{callbacks:{label:function(ctx){
-            var labels=['S/.0.00 · 0 cta','S/.0.00 · 0 cta'];
+            var labels=['S/.412,258.06 · 53 cta','S/.218,064.52 · 24 cta'];
             return labels[ctx.dataIndex];
           }}}}}
     });
     var _lgd=document.getElementById('cFunnelPieLgd');
-    if(_lgd)_lgd.innerHTML='<span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#3B82F6;margin-right:4px"></span>50% S/.0.00M (53 cta)</span>'+'<span style="margin-left:8px"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#22C55E;margin-right:4px"></span>75% S/.0.00M (24 cta)</span>';
+    if(_lgd)_lgd.innerHTML='<span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#3B82F6;margin-right:4px"></span>50% S/.0.41M (53 cta)</span>'+'<span style="margin-left:8px"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#22C55E;margin-right:4px"></span>75% S/.0.22M (24 cta)</span>';
   })();
 
   dc('cFunnelBar');
@@ -4917,7 +4917,7 @@ function bP1(){
     CHS['cFunnelBar']=new Chart(el,{type:'bar',plugins:[_plug],
       data:{labels:['50% Negociación','75% Pre Cierre','Total Funnel'],datasets:[
         {label:'Head Carlos',data:[0,0,0],backgroundColor:'rgba(249,115,22,.80)',borderColor:'#F97316',borderWidth:1.5,borderRadius:5},
-        {label:'Head Ana',data:[0,0,0],backgroundColor:'rgba(168,85,247,.80)',borderColor:'#A855F7',borderWidth:1.5,borderRadius:5}
+        {label:'Head Ana',data:[52.2,58.4,54.4],backgroundColor:'rgba(168,85,247,.80)',borderColor:'#A855F7',borderWidth:1.5,borderRadius:5}
       ]},
       options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',labels:{font:{size:10},boxWidth:10}},tooltip:{callbacks:{label:function(ctx){var s=ctx.datasetIndex===0?_solC:_solA;return ctx.dataset.label+': '+ctx.raw.toFixed(1)+'% = '+s[ctx.dataIndex];}}}},scales:{x:{ticks:{font:{size:10}},grid:{display:false}},y:{max:100,ticks:{callback:function(v){return v+'%';},font:{size:9}},grid:{color:'rgba(0,0,0,.06)'}}}}
     });
@@ -4947,7 +4947,7 @@ function bP1(){
     var el=document.getElementById('cRucTeam');if(!el)return;
     var _rt={id:'rT31',afterDatasetsDraw:function(chart){chart.data.datasets.forEach(function(ds,di){var meta=chart.getDatasetMeta(di);if(meta.hidden)return;meta.data.forEach(function(b,i){var v=ds.data[i];if(v>0){chart.ctx.save();chart.ctx.fillStyle=ds.borderColor;chart.ctx.font='bold 11px sans-serif';chart.ctx.textAlign='center';chart.ctx.textBaseline='bottom';chart.ctx.fillText(v,b.x,b.y-4);chart.ctx.restore();}});});}};
     var _f50c=(_t==='ana'?0:29),_f75c=(_t==='ana'?0:17),_f50a=(_t==='carlos'?0:24),_f75a=(_t==='carlos'?0:7);
-    CHS['cRucTeam']=new Chart(el,{type:'bar',plugins:[_rt],data:{labels:['RUC','50% Neg','75% Cierre'],datasets:[{label:'Head Carlos',data:[_ruc_carlos_abr,_f50c,_f75c],backgroundColor:'rgba(249,115,22,.80)',borderColor:'#F97316',borderWidth:1.5,borderRadius:5},{label:'Head Ana',data:[_ruc_ana_abr,_f50a,_f75a],backgroundColor:'rgba(168,85,247,.80)',borderColor:'#A855F7',borderWidth:1.5,borderRadius:5}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',labels:{font:{size:10},boxWidth:10}}},scales:{x:{ticks:{font:{size:11}},grid:{display:false}},y:{ticks:{stepSize:1,font:{size:9}},grid:{color:'rgba(0,0,0,.06)'}}}}});
+    CHS['cRucTeam']=new Chart(el,{type:'bar',plugins:[_rt],data:{labels:['Julio','50% Julio','75% Julio'],datasets:[{label:'Head Carlos',data:[_ruc_carlos_abr,_f50c,_f75c],backgroundColor:'rgba(249,115,22,.80)',borderColor:'#F97316',borderWidth:1.5,borderRadius:5},{label:'Head Ana',data:[_ruc_ana_abr,_f50a,_f75a],backgroundColor:'rgba(168,85,247,.80)',borderColor:'#A855F7',borderWidth:1.5,borderRadius:5}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',labels:{font:{size:10},boxWidth:10}}},scales:{x:{ticks:{font:{size:11}},grid:{display:false}},y:{ticks:{stepSize:1,font:{size:9}},grid:{color:'rgba(0,0,0,.06)'}}}}});
   })();
 
   dc('cRucCumpl');
@@ -4983,7 +4983,7 @@ function bP1(){
     var el=document.getElementById('cQrFact');if(!el)return;
     var _sols=['S/.'+Math.round(_qr_may_monto).toLocaleString('es-PE'),'S/.'+Math.round(_qr_abr_monto).toLocaleString('es-PE')];
     var _qf1={id:'qf31',afterDatasetsDraw:function(chart){var ctx=chart.ctx,ds=chart.data.datasets[0];var tot=ds.data.reduce(function(a,b){return a+b;},0);chart.getDatasetMeta(0).data.forEach(function(arc,i){var v=ds.data[i];if(v<=0)return;var mid=(arc.startAngle+arc.endAngle)/2;var r2=(arc.outerRadius+arc.innerRadius)/2;var x=arc.x+Math.cos(mid)*r2,y=arc.y+Math.sin(mid)*r2;ctx.save();ctx.fillStyle='#fff';ctx.font='bold 10px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(v+' QR',x,y-8);ctx.font='9px sans-serif';ctx.fillText(_sols[i],x,y+4);ctx.fillText('('+Math.round(v/tot*100)+'%)',x,y+15);ctx.restore();});}};
-    CHS['cQrFact']=new Chart(el,{type:'doughnut',plugins:[_qf1],data:{labels:['Agosto','Septiembre'],datasets:[{data:[_qr_may_cnt,_qr_abr_cnt],backgroundColor:['rgba(168,85,247,.80)','rgba(59,130,246,.82)'],borderColor:['#A855F7','#3B82F6'],borderWidth:2,hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'62%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){var montos=['S/.396,290.64','S/.19,480.16'];return ctx.label+': '+ctx.raw+' QR = '+montos[ctx.dataIndex];}}}}}});
+    CHS['cQrFact']=new Chart(el,{type:'doughnut',plugins:[_qf1],data:{labels:['Junio','Julio'],datasets:[{data:[_qr_may_cnt,_qr_abr_cnt],backgroundColor:['rgba(168,85,247,.80)','rgba(59,130,246,.82)'],borderColor:['#A855F7','#3B82F6'],borderWidth:2,hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'62%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){var montos=['S/.396,290.64','S/.19,480.16'];return ctx.label+': '+ctx.raw+' QR = '+montos[ctx.dataIndex];}}}}}});
     var l=document.getElementById('cQrFactLgd'),sp='display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;background:';
     if(l)l.innerHTML='<span><span style="'+sp+'#A855F7"></span>Junio: '+_qr_may_cnt+' QR = S/.0</span>'+'<span style="margin-left:8px"><span style="'+sp+'#3B82F6"></span>Julio: '+_qr_abr_cnt+' QR = S/.94,662</span>';
   })();
@@ -5003,7 +5003,7 @@ function bP1(){
   (function(){
     var el=document.getElementById('cArisEstado');if(!el)return;
     var _cAE={id:'cArisEstadoLbl31',afterDatasetsDraw:function(chart){var ctx=chart.ctx,ds=chart.data.datasets[0];var total=ds.data.reduce(function(a,b){return a+b;},0);chart.getDatasetMeta(0).data.forEach(function(arc,i){var v=ds.data[i];if(v<=0)return;var mid=(arc.startAngle+arc.endAngle)/2,r=(arc.outerRadius+arc.innerRadius)/2;var x=arc.x+Math.cos(mid)*r,y=arc.y+Math.sin(mid)*r;var pct=Math.round(v/total*100);ctx.save();ctx.fillStyle='#fff';ctx.font='bold 11px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(v,x,y-6);ctx.fillText('('+pct+'%)',x,y+7);ctx.restore();});}};
-    CHS['cArisEstado']=new Chart(el,{type:'doughnut',plugins:[_cAE],data:{labels:['Con Alta Sunat','Sin Alta Sunat'],datasets:[{data:[0,0],backgroundColor:['rgba(0,229,160,.82)','rgba(239,68,68,.75)'],borderColor:['#00E5A0','#EF4444'],borderWidth:2,hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'62%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ctx.label+': '+ctx.raw+' lic';}}}}}});
+    CHS['cArisEstado']=new Chart(el,{type:'doughnut',plugins:[_cAE],data:{labels:['Con Alta Sunat','Sin Alta Sunat'],datasets:[{data:[40,0],backgroundColor:['rgba(0,229,160,.82)','rgba(239,68,68,.75)'],borderColor:['#00E5A0','#EF4444'],borderWidth:2,hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'62%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ctx.label+': '+ctx.raw+' lic';}}}}}});
     var l=document.getElementById('cArisEstadoLgd'),sp='display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;background:';
     if(l)l.innerHTML='<span><span style="'+sp+'#00E5A0"></span>Con alta: 0 lic</span>'+'<span style="margin-left:8px"><span style="'+sp+'#EF4444"></span>Sin alta: 0 lic</span>';
   })();
@@ -5022,7 +5022,7 @@ function bP1(){
   (function(){
     var el=document.getElementById('cArisSinAlta');if(!el)return;
     var _plug={id:'asa31',afterDatasetsDraw:function(chart){var ctx=chart.ctx,ds=chart.data.datasets[0];var total=ds.data.reduce(function(a,b){return a+b;},0);chart.getDatasetMeta(0).data.forEach(function(arc,i){var v=ds.data[i];if(v<=0)return;var mid=(arc.startAngle+arc.endAngle)/2;var r2=(arc.outerRadius+arc.innerRadius)/2;var x=arc.x+Math.cos(mid)*r2,y=arc.y+Math.sin(mid)*r2;var pct=Math.round(v/total*100);ctx.save();ctx.fillStyle='#fff';ctx.font='bold 11px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(v+' lic',x,y-6);ctx.fillText('('+pct+'%)',x,y+7);ctx.restore();})}};
-    CHS['cArisSinAlta']=new Chart(el,{type:'doughnut',plugins:[_plug],data:{labels:['Sin Alta','Cerradas'],datasets:[{data:[0,0],backgroundColor:['rgba(239,68,68,.75)','rgba(0,229,160,.82)'],borderColor:['#EF4444','#00E5A0'],borderWidth:2,hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'58%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ctx.label+': '+ctx.raw+' lic';}}}}}});
+    CHS['cArisSinAlta']=new Chart(el,{type:'doughnut',plugins:[_plug],data:{labels:['Sin Alta','Cerradas'],datasets:[{data:[0,44],backgroundColor:['rgba(239,68,68,.75)','rgba(0,229,160,.82)'],borderColor:['#EF4444','#00E5A0'],borderWidth:2,hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'58%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ctx.label+': '+ctx.raw+' lic';}}}}}});
     var l=document.getElementById('cArisSinAltaLgd'),sp='display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;background:';
     if(l)l.innerHTML='<span><span style="'+sp+'#00E5A0"></span>25 lic cerradas con Alta Sunat</span><span style="margin-left:8px"><span style="'+sp+'#EF4444"></span>0 lic Sin Alta Sunat</span>';
   })();
@@ -5143,7 +5143,7 @@ function bP2(){
           <div class="rmbar"><div class="rmfill" style="width:${cbw}%;background:${ccol}"></div></div>
         </div>
         <div class="rm">
-          <div class="rmlbl" style="color:${COL_RUC}">RUC Agosto</div>
+          <div class="rmlbl" style="color:${COL_RUC}">RUC Setiembre</div>
           <div class="rmpct" style="color:${rcol}">${pctFmt(rpct)}</div>
           <div class="rmval">${h.ruc_n} nuevos / cuota: 3</div>
           <div class="rmbar"><div class="rmfill" style="width:${rbw}%;background:${rcol}"></div></div>
@@ -5155,7 +5155,7 @@ function bP2(){
           <div class="rmbar"><div class="rmfill" style="width:${qbw}%;background:${qcol}"></div></div>
         </div>
         <div class="rm">
-          <div class="rmlbl" style="color:${COL_ARS}">Arisale Agosto</div>
+          <div class="rmlbl" style="color:${COL_ARS}">Arisale Setiembre</div>
           <div class="rmpct" style="color:${acol}">${pctFmt(apct)}</div>
           <div class="rmval">${h.aris_val>0?fmt(h.aris_val):'S/.0'} / cuota: ${albl}</div>
           <div class="rmbar"><div class="rmfill" style="width:${abw}%;background:${acol}"></div></div>
@@ -5805,7 +5805,7 @@ function rC(){
     +'<td style="'+TTD+';color:#08210A;background:rgba(27,94,32,.05)">'+tf(noFilter?5864291.44:sum('jul'))+'</td>'
     +'<td style="'+TTD+';color:#1A7D44;background:rgba(26,125,68,.10)">'+tf(noFilter?9839257.83:sum('ago'))+'</td>'
     +'<td style="'+TTD+';color:#7C3AED;background:rgba(124,58,237,.12)">'+tf(noFilter?509395.63:sum('sep07'))+'</td>'
-    +'<td style="'+TTD+';color:#5B21B6;background:rgba(91,33,182,.10)">'+tf(noFilter?2183124.21:sum('incrproy'))+'</td>'
+    +'<td style="'+TTD+';color:#5B21B6;background:rgba(91,33,182,.10)">'+tf(noFilter?2183124.17:sum('incrproy'))+'</td>'
     +'<td style="'+TTD+';color:#A855F7;font-size:11px">'+tf(sum('proy')||sum('p'))+'</td>'
     +'</tr>';
 
@@ -5817,7 +5817,7 @@ function rC(){
       +'&nbsp;·&nbsp;<span style="color:#08210A">Jul: <b>'+tf(noFilter?5864291.44:sum('jul'))+'</b></span>'
       +'&nbsp;·&nbsp;<span style="color:#1A7D44">Ago: <b>'+tf(noFilter?9839257.83:sum('ago'))+'</b></span>'
       +'&nbsp;·&nbsp;<span style="color:#7C3AED">Sep-07: <b>'+tf(noFilter?509395.63:sum('sep07'))+'</b></span>'
-      +'&nbsp;·&nbsp;<span style="color:#5B21B6">Incr.Proy: <b>'+tf(noFilter?2183124.21:sum('incrproy'))+'</b></span>'
+      +'&nbsp;·&nbsp;<span style="color:#5B21B6">Incr.Proy: <b>'+tf(noFilter?2183124.17:sum('incrproy'))+'</b></span>'
       +'&nbsp;·&nbsp;<span style="color:#A855F7">Proy: <b>'+tf(proy_total)+'</b></span>';
   }
 }
@@ -5854,7 +5854,7 @@ function bP9(){
   if(_f)_f.textContent=_fd.length+" oportunidades · Total: "+_fm(_tot);
 }
 
-var PAGES={pSVA:{title:'Ranking SVA — Septiembre 2026 · Dia 07',sub:'Sistema de Puntos · RUC 4pts · Planillas 4pts · QR 1pt (≥S/500) · Arisale 1pt/S60 (cerrados) · Meta: Junior 26 / Senior 27',build:bPSVA},pC:{title:'Cosechas Septiembre 2026 — Dia 07',sub:'Sin Restas · Modalidad · Tipo · Banco · Cortes Agosto',build:bPC}, p1:{title:'Resumen general',sub:'Corte al 07 de Septiembre 2026 · Dia 07',build:bP1},p2:{title:'Ranking — Septiembre 2026 · Dia 07',sub:'Captura 65% + SVA 35% (RUC×4 + QR×1 + Arisale/59 + Planillas×4) — Dia 07 Septiembre 2026',build:bP2},p3:{title:'5 graficos de lineas por mes',sub:'Enero   Febrero   Marzo   Abril   Mayo',build:bP3},p4:{title:'Curva Septiembre 2026 · Dia 07',sub:'Real dia 19   Proy S/.3,494K',build:bP4},p5:{title:'Arisale — Septiembre 2026 · Dia 07',sub:'0 licencias · S/.0.00 · 0 hunters',build:bP5},p6:{title:'QR Parlante — Septiembre 2026 · Dia 07',sub:'70 QR · 45 activados · 25 pendientes · Proy: S/.396,291',build:bP6},p7:{title:'Cuentas — Septiembre 2026 · Dia 07',sub:'May · Jun · Jul-31 · Ago-06 · Ago-09 ★ · 171 cuentas',build:function(){try{updCC();}catch(e){}try{rC();}catch(e){}}},p8:{title:'RUC Nuevos — Septiembre 2026 · Dia 07',sub:'16 RUC · Cuota 54 · Dia 07 Septiembre',build:bP8},p9:{title:'Funnel — Pipeline Septiembre 2026 · Dia 07',sub:'77 oportunidades · S/.9,770,000 potencial · Proy: S/.630,323',build:bP9},
+var PAGES={pSVA:{title:'Ranking SVA — Septiembre 2026 · Dia 07',sub:'Sistema de Puntos · RUC 4pts · Planillas 4pts · QR 1pt (≥S/500) · Arisale 1pt/S60 (cerrados) · Meta: Junior 26 / Senior 27',build:bPSVA},pC:{title:'Cosechas Septiembre 2026 — Dia 07',sub:'Sin Restas · Modalidad · Tipo · Banco · Cortes Agosto',build:bPC}, p1:{title:'Resumen general',sub:'Corte al 07 de Septiembre 2026 · Dia 07',build:bP1},p2:{title:'Ranking — Septiembre 2026 · Dia 07',sub:'Captura 65% + SVA 35% (RUC×4 + QR×1 + Arisale/59 + Planillas×4) — Dia 07 Septiembre 2026',build:bP2},p3:{title:'5 graficos de lineas por mes',sub:'Enero   Febrero   Marzo   Abril   Mayo',build:bP3},p4:{title:'Curva Septiembre 2026 · Dia 07',sub:'Real dia 19   Proy S/.3,494K',build:bP4},p5:{title:'Arisale — Septiembre 2026 · Dia 07',sub:'31 licencias · S/.2,658 · 10 hunters',build:bP5},p6:{title:'QR Parlante — Septiembre 2026 · Dia 07',sub:'70 QR · 45 activados · 25 pendientes · Proy: S/.396,291',build:bP6},p7:{title:'Cuentas — Septiembre 2026 · Dia 07',sub:'May · Jun · Jul-31 · Ago-06 · Ago-09 ★ · 171 cuentas',build:function(){try{updCC();}catch(e){}try{rC();}catch(e){}}},p8:{title:'RUC Nuevos — Septiembre 2026 · Dia 07',sub:'16 RUC · Cuota 54 · Dia 07 Septiembre',build:bP8},p9:{title:'Funnel — Pipeline Septiembre 2026 · Dia 07',sub:'77 oportunidades · S/.9,770,000 potencial · Proy: S/.630,323',build:bP9},
 };
 var done={};
 function go(id,btn){
@@ -6389,7 +6389,7 @@ function updateQRKPIs(){
   var _montoMap={all:'S/.293,387.87',carlos:'S/.85,469.66',ana:'S/.207,918.21'};
   var _tot=_qrTotMap[_t]||12;var _act=_qrActMap[_t]||11;var _pend=_qrPendMap[_t]||1;
   if(_el2('p6KNuevoVal'))_el2('p6KNuevoVal').textContent=_tot;
-  if(_el2('p6KNuevoSub'))_el2('p6KNuevoSub').textContent='Cuota: 54 QR';
+  if(_el2('p6KNuevoSub'))_el2('p6KNuevoSub').textContent='Cuota: 63 QR';
   if(_el2('p6KActVal'))_el2('p6KActVal').textContent=_act;
   if(_el2('p6KActSub'))_el2('p6KActSub').textContent='Activados · Dia 07';
   if(_el2('p6KPendVal'))_el2('p6KPendVal').textContent=_pend;
@@ -6604,15 +6604,15 @@ function updateKPICards(){
   // ── Datos por equipo ──────────────────────────────────────────────────────
   var D={
     all:{
-      cap_val:'S/.509,395.64', cap_pct:'8.9', cap_cuota:'S/.5.70M', cap_proy:'S/.2,830,398.91', cap_real:'S/.509,395.64',
-      funnel_val:'S/.0.00', funnel_50:'53 cta · S/.6.39M', funnel_75:'24 cta · S/.3.38M',
+      cap_val:'S/.509,395.64', cap_pct:'8.9', cap_cuota:'S/.5.70M', cap_proy:'S/.2,183,124.17', cap_real:'S/.509,395.64',
+      funnel_val:'S/.285,651.39', funnel_50:'53 cta · S/.6.39M', funnel_75:'24 cta · S/.3.38M',
       inc_val:'S/.5,217,333', inc_proy:'S/.5,217,333',
       ruc_val:'56', ruc_pct:'103.7', ruc_cuota:'54', ruc_proy:'56', ruc_cos:'18',
       fruc_val:'0', fruc_50:'0 cta', fruc_75:'0 cta',
-      qr_val:'12', qr_pct:'22.2', qr_cuota:'54', qr_total:'12',
-      aris_val:'S/.0.00', aris_pct:'0.0', aris_cuota:'S/.0.00', aris_proy:'S/.0.00',
+      qr_val:'12', qr_pct:'16.2', qr_cuota:'74', qr_total:'12',
+      aris_val:'S/.0.00', aris_pct:'0.0', aris_cuota:'S/.4,440', aris_proy:'S/.0.00',
       alic_val:'0 lic', alic_alta:'Arisale inicia en Septiembre', alic_sin:'Sin Alta → 0 lic',
-      cos_m1:'S/.935,087.43', cos_m2:'S/.2,549,314.53', cos_m3:'S/.407,811.36', cos_tot:'S/.3,892,213.32',
+      cos_m1:'S/ 1,518,344.67', cos_m2:'-S/ 79,639.13', cos_m3:'-S/ 176,146.20', cos_tot:'S/ 1,262,559.35',
       qr_m1_val:'0', qr_m1_ge:'0', qr_m1_lt:'0',
       qr_m0_val:'12', qr_m0_ge:'11', qr_m0_lt:'1'
     },
@@ -6675,8 +6675,8 @@ function updateKPICards(){
       +sp('#A855F7','M3: '+d.cos_m3)
       +sm('Total: '+d.cos_tot))
     // 3. Cosechas M0 + Funnel — global
-    +kpi('linear-gradient(90deg,#F59E0B,#22C55E)','Cosechas M0 + Funnel',d.funnel_val,'#F59E0B',
-      sp('#F59E0B','M0: S/.0.00')
+    +kpi('linear-gradient(90deg,#F59E0B,#22C55E)','Cosechas M0 + Funnel','S/. 0','#F59E0B',
+      sp('#F59E0B','M0: S/.285,651.39')
       +sp('#22C55E','Funnel: S/.0.00'))
     +'</div>';
 
