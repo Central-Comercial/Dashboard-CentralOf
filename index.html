@@ -627,7 +627,7 @@ canvas{display:block}
 <div id="p8" class="pg">
       <!-- KPIs -->
       <div class="krow k4" style="margin-bottom:14px" id="p8kpis">
-        <div class="kpi"><div class="kbar" style="background:#00E5A0"></div><div class="klbl">RUC Nuevos — Agosto</div><div class="kval" style="color:#00E5A0" id="k8total">58</div><div class="ksub"><span class="bge bw">Cuota: 54 RUC</span></div></div>
+        <div class="kpi"><div class="kbar" style="background:#00E5A0"></div><div class="klbl">RUC Nuevos — Agosto</div><div class="kval" style="color:#00E5A0" id="k8total">58</div><div class="ksub"><span class="bge bw">Cuota: 63 RUC</span></div></div>
         <div class="kpi"><div class="kbar" style="background:#3B82F6"></div><div class="klbl">Llegan a S/.25K</div><div class="kval" style="color:#3B82F6" id="k8ok">8</div><div class="ksub"><span class="bge" style="background:rgba(59,130,246,.15);color:#3B82F6" id="k8okpct">19.0%</span></div></div>
         <div class="kpi"><div class="kbar" style="background:#EF4444"></div><div class="klbl">No llegan a S/.25K</div><div class="kval" style="color:#EF4444" id="k8nok">26</div><div class="ksub"><span class="bge" style="background:rgba(239,68,68,.12);color:#EF4444">Meta &gt; S/.25,000</span></div></div>
         <div class="kpi"><div class="kbar" style="background:#A855F7"></div><div class="klbl">Proyeccion total</div><div class="kval" style="color:#A855F7" id="k8proy">81%</div><div class="ksub"><span class="bge bu" id="k8real">Real: 44 RUC · Dia 07 Sep</span></div></div>
@@ -4152,7 +4152,7 @@ function updateKPICards(){
       ruc_val:'3', ruc_pct:'12.5', ruc_cuota:'24', ruc_proy:'3', ruc_cos:'18',
       fruc_val:'52', fruc_50:'46 cta', fruc_75:'6 cta',
       qr_val:'6', qr_pct:'25.0', qr_cuota:'24', qr_total:'16',
-      aris_val:'S/.3,354', aris_pct:'19.3', aris_cuota:'S/.1,740', aris_proy:'S/.3,354',
+      aris_val:'S/.3,354', aris_pct:'19.3', aris_cuota:'S/.4,260', aris_proy:'S/.3,354',
       alic_val:'45 lic', alic_alta:'0 cerradas → S/.0', alic_sin:'45 pre cierre → S/.3,354',
       cos_m1:'S/.1,427,706', cos_m2:'-S/.301,887', cos_m3:'-S/.19,787', cos_tot:'S/.1,106,033',
       qr_m1_val:'10', qr_m1_ge:'5', qr_m1_lt:'5',
@@ -4191,9 +4191,9 @@ function updateKPICards(){
       +sp('#A855F7','M3: '+d.cos_m3)
       +sm('Total: '+d.cos_tot))
     // 3. Cosechas M0 + Funnel — global
-    +kpi('linear-gradient(90deg,#F59E0B,#22C55E)','Cosechas M0 + Funnel','S/. 0','#F59E0B',
-      sp('#F59E0B','M0: S/.1,448,211')
-      +sp('#22C55E','Funnel: S/.0'))
+    +kpi('linear-gradient(90deg,#F59E0B,#22C55E)','Cosechas M0 + Funnel','S/. 920,564.82','#F59E0B',
+      sp('#F59E0B','M0: S/ 920,564.82')
+      +sp('#22C55E','Funnel: S/ 0'))
     +'</div>';
 
   // ── FILA 2: Cosechas Ruc | Ruc Proyectado | Funnel RUC ────────────────────
@@ -5854,7 +5854,7 @@ function bP9(){
   if(_f)_f.textContent=_fd.length+" oportunidades · Total: "+_fm(_tot);
 }
 
-var PAGES={pSVA:{title:'Ranking SVA — Septiembre 2026 · Dia 07',sub:'Sistema de Puntos · RUC 4pts · Planillas 4pts · QR 1pt (≥S/500) · Arisale 1pt/S60 (cerrados) · Meta: Junior 26 / Senior 27',build:bPSVA},pC:{title:'Cosechas Septiembre 2026 — Dia 07',sub:'Sin Restas · Modalidad · Tipo · Banco · Cortes Agosto',build:bPC}, p1:{title:'Resumen general',sub:'Corte al 07 de Septiembre 2026 · Dia 07',build:bP1},p2:{title:'Ranking — Septiembre 2026 · Dia 07',sub:'Captura 65% + SVA 35% (RUC×4 + QR×1 + Arisale/59 + Planillas×4) — Dia 07 Septiembre 2026',build:bP2},p3:{title:'5 graficos de lineas por mes',sub:'Enero   Febrero   Marzo   Abril   Mayo',build:bP3},p4:{title:'Curva Septiembre 2026 · Dia 07',sub:'Real dia 19   Proy S/.3,494K',build:bP4},p5:{title:'Arisale — Septiembre 2026 · Dia 07',sub:'31 licencias · S/.2,658 · 10 hunters',build:bP5},p6:{title:'QR Parlante — Septiembre 2026 · Dia 07',sub:'70 QR · 45 activados · 25 pendientes · Proy: S/.396,291',build:bP6},p7:{title:'Cuentas — Septiembre 2026 · Dia 07',sub:'May · Jun · Jul-31 · Ago-06 · Ago-09 ★ · 171 cuentas',build:function(){try{updCC();}catch(e){}try{rC();}catch(e){}}},p8:{title:'RUC Nuevos — Septiembre 2026 · Dia 07',sub:'16 RUC · Cuota 54 · Dia 07 Septiembre',build:bP8},p9:{title:'Funnel — Pipeline Septiembre 2026 · Dia 07',sub:'77 oportunidades · S/.9,770,000 potencial · Proy: S/.630,323',build:bP9},
+var PAGES={pSVA:{title:'Ranking SVA — Septiembre 2026 · Dia 07',sub:'Sistema de Puntos · RUC 4pts · Planillas 4pts · QR 1pt (≥S/500) · Arisale 1pt/S60 (cerrados) · Meta: Junior 26 / Senior 27',build:bPSVA},pC:{title:'Cosechas Septiembre 2026 — Dia 07',sub:'Sin Restas · Modalidad · Tipo · Banco · Cortes Agosto',build:bPC}, p1:{title:'Resumen general',sub:'Corte al 07 de Septiembre 2026 · Dia 07',build:bP1},p2:{title:'Ranking — Septiembre 2026 · Dia 07',sub:'Captura 65% + SVA 35% (RUC×4 + QR×1 + Arisale/59 + Planillas×4) — Dia 07 Septiembre 2026',build:bP2},p3:{title:'5 graficos de lineas por mes',sub:'Enero   Febrero   Marzo   Abril   Mayo',build:bP3},p4:{title:'Curva Septiembre 2026 · Dia 07',sub:'Real dia 19   Proy S/.3,494K',build:bP4},p5:{title:'Arisale — Septiembre 2026 · Dia 07',sub:'31 licencias · S/.2,658 · 10 hunters',build:bP5},p6:{title:'QR Parlante — Septiembre 2026 · Dia 07',sub:'70 QR · 45 activados · 25 pendientes · Proy: S/.396,291',build:bP6},p7:{title:'Cuentas — Septiembre 2026 · Dia 07',sub:'May · Jun · Jul-31 · Ago-06 · Ago-09 ★ · 171 cuentas',build:function(){try{updCC();}catch(e){}try{rC();}catch(e){}}},p8:{title:'RUC Nuevos — Septiembre 2026 · Dia 07',sub:'16 RUC · Cuota 71 · Dia 07 Septiembre',build:bP8},p9:{title:'Funnel — Pipeline Septiembre 2026 · Dia 07',sub:'77 oportunidades · S/.9,770,000 potencial · Proy: S/.630,323',build:bP9},
 };
 var done={};
 function go(id,btn){
@@ -6607,7 +6607,7 @@ function updateKPICards(){
       cap_val:'S/.509,395.64', cap_pct:'8.9', cap_cuota:'S/.5.70M', cap_proy:'S/.2,183,124.17', cap_real:'S/.509,395.64',
       funnel_val:'S/.285,651.39', funnel_50:'53 cta · S/.6.39M', funnel_75:'24 cta · S/.3.38M',
       inc_val:'S/.5,217,333', inc_proy:'S/.5,217,333',
-      ruc_val:'56', ruc_pct:'103.7', ruc_cuota:'54', ruc_proy:'56', ruc_cos:'18',
+      ruc_val:'56', ruc_pct:'103.7', ruc_cuota:'63', ruc_proy:'56', ruc_cos:'18',
       fruc_val:'0', fruc_50:'0 cta', fruc_75:'0 cta',
       qr_val:'12', qr_pct:'16.2', qr_cuota:'74', qr_total:'12',
       aris_val:'S/.0.00', aris_pct:'0.0', aris_cuota:'S/.4,440', aris_proy:'S/.0.00',
@@ -6675,9 +6675,9 @@ function updateKPICards(){
       +sp('#A855F7','M3: '+d.cos_m3)
       +sm('Total: '+d.cos_tot))
     // 3. Cosechas M0 + Funnel — global
-    +kpi('linear-gradient(90deg,#F59E0B,#22C55E)','Cosechas M0 + Funnel','S/. 0','#F59E0B',
-      sp('#F59E0B','M0: S/.285,651.39')
-      +sp('#22C55E','Funnel: S/.0.00'))
+    +kpi('linear-gradient(90deg,#F59E0B,#22C55E)','Cosechas M0 + Funnel','S/. 920,564.82','#F59E0B',
+      sp('#F59E0B','M0: S/ 920,564.82')
+      +sp('#22C55E','Funnel: S/ 0'))
     +'</div>';
 
   // ── FILA 2: Cosechas Ruc | Ruc Proyectado | Funnel RUC ────────────────────
