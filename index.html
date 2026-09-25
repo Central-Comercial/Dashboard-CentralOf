@@ -4808,7 +4808,7 @@ function bP1(){
       labels:['Sep-07','Sep-13','Sep-15','Sep-17','Sep-21','Sep-22','Sep-23'],
       datasets:[{
         label:'Proyeccion',
-        data:[2830398.91,1709166.07,2761068.79,2773884.29,3568945.46,3528667.44,2724630.35],
+        data:[2830398.91,1709166.07,2761068.79,1741145.77,2991727.15,2937099.62,2724630.35],
         borderColor:'#000000',
         backgroundColor:'transparent',
         pointBackgroundColor:['#000000','#000000','#000000','#000000','#000000','#000000','#000000'],
@@ -4823,7 +4823,7 @@ function bP1(){
       afterDatasetsDraw:function(chart){
         var ctx=chart.ctx;
         var meta=chart.getDatasetMeta(0);
-        var lbs=['S/.2,830,398.91','S/.1,709,166.07','S/.2,761,068.79','S/.2,773,884.29','S/.3,568,945.46','S/.3,528,667.44','S/.2,724,630.35'];
+        var lbs=['S/.2,830,398.91','S/.1,709,166.07','S/.2,761,068.79','S/.1,741,145.77','S/.2,991,727.15','S/.2,937,099.62','S/.2,724,630.35'];
         meta.data.forEach(function(pt,i){
           if(!lbs[i])return;
           ctx.save();
@@ -4851,7 +4851,7 @@ function bP1(){
     }
   });
   var _foot=document.getElementById('cMayRFoot');
-  if(_foot)_foot.innerHTML='<span style="font-size:11px;color:#333">⬤ <b>Sep-07:</b> S/.2,830,398.91 &nbsp;·&nbsp; ⬤ <b>Sep-13:</b> S/.1,709,166.07 &nbsp;·&nbsp; ⬤ <b>Sep-15:</b> S/.2,761,068.79 &nbsp;·&nbsp; ⬤ <b>Sep-17:</b> S/.2,773,884.29 &nbsp;·&nbsp; ⬤ <b>Sep-21:</b> S/.3,568,945.46 &nbsp;·&nbsp; ⬤ <b>Sep-22:</b> S/.3,528,667.44 &nbsp;·&nbsp; ⬤ <b>Sep-23:</b> S/.2,724,630.35</span>';
+  if(_foot)_foot.innerHTML='<span style="font-size:11px;color:#333">⬤ <b>Sep-07:</b> S/.2,830,398.91 &nbsp;·&nbsp; ⬤ <b>Sep-13:</b> S/.1,709,166.07 &nbsp;·&nbsp; ⬤ <b>Sep-15:</b> S/.2,761,068.79 &nbsp;·&nbsp; ⬤ <b>Sep-17:</b> S/.1,741,145.77 &nbsp;·&nbsp; ⬤ <b>Sep-21:</b> S/.2,991,727.15 &nbsp;·&nbsp; ⬤ <b>Sep-22:</b> S/.2,937,099.62 &nbsp;·&nbsp; ⬤ <b>Sep-23:</b> S/.2,724,630.35</span>';
   // ── Score Ponderación ─────────────────────────────────────────────────────
   dc('cSco');
   (function(){
@@ -5357,7 +5357,7 @@ function bP4(){
   CHS['cCurva']=new Chart(document.getElementById('cCurva'),{type:'line',
     data:{labels:['Sep-07','Sep-13','Sep-15','Sep-17','Sep-21','Sep-22','Sep-23'],datasets:[
       {label:'Proyectado Septiembre',
-       data:[2830398.91,1709166.07,2761068.79,2773884.29,3568945.46,3528667.44,2724630.35],
+       data:[2830398.91,1709166.07,2761068.79,1741145.77,2991727.15,2937099.62,2724630.35],
        borderColor:'#000000',backgroundColor:'rgba(0,0,0,.05)',
        pointBackgroundColor:['#000000','#000000','#000000','#000000','#000000','#000000','#000000'],
        pointBorderColor:['#000000','#000000','#000000','#000000','#000000','#000000','#000000'],
